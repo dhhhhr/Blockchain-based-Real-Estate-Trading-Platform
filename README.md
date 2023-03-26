@@ -33,10 +33,10 @@
 ## 改动及调试
 
 1. 后端：`application/server`，默认使用原作者编译好放在 Docker Hub 上的镜像： togettoyou/fabric-realty.server:latest，
-   如改动代码需要自行编译（进入 server 执行 ./build.sh ）并使用本地镜像：fabric-realty.server:latest
+   如改动代码需要自行编译（进入 server 执行 ./build.sh ）并在`application/docker-compose.yaml`中指定使用本地镜像：fabric-realty.server:latest
 
 2. 前端：`application/web`，默认使用原作者编译好放在 Docker Hub 上的镜像： togettoyou/fabric-realty.web:latest，
-   如改动代码需要自行编译（进入 web 执行 ./build.sh ）并使用本地镜像：fabric-realty.web:latest
+   如改动代码需要自行编译（进入 web 执行 ./build.sh ）并在`application/docker-compose.yaml`中指定使用本地镜像：fabric-realty.web:latest
 
 
 ## 完全清理环境
