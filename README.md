@@ -30,6 +30,15 @@
    启动区块链浏览器后，访问 [http://localhost:8080](http://localhost:8080)，用户名 admin，密码
    123456
 
+## 改动及调试
+
+1. 后端：`application/server`，默认使用原作者编译好放在 Docker Hub 上的镜像： togettoyou/fabric-realty.server:latest，
+   如改动代码需要自行编译（进入 server 执行 ./build.sh ）并使用本地镜像：fabric-realty.server:latest
+
+2. 前端：`application/web`，默认使用原作者编译好放在 Docker Hub 上的镜像： togettoyou/fabric-realty.web:latest，
+   如改动代码需要自行编译（进入 web 执行 ./build.sh ）并使用本地镜像：fabric-realty.web:latest
+
+
 ## 完全清理环境
 
 注意，该操作会将所有数据清空。按照该先后顺序：
@@ -62,14 +71,4 @@
 业主发起销售，所有人都可查看销售列表，购买者购买后进行扣款操作，并等待业主确认收款，交易完成后，更新房产持有人。在有效期期间可以随时取消交易，有效期到期后自动关闭交易。
 
 业主发起捐赠，指定受赠人，受赠人确认接收受赠前，双方可取消捐赠/受赠。
-
-## 演示效果
-
-![login](https://user-images.githubusercontent.com/55381228/159389012-4d3d8617-2bd8-4d9c-bacf-452f97cc9bbc.png)
-
-![addreal](https://user-images.githubusercontent.com/55381228/159389026-9ca119bd-fd5f-4b89-b003-a09907ce0cdf.png)
-
-![info](https://user-images.githubusercontent.com/55381228/159389035-b84f2de1-18f9-48a7-93f5-db9dd20a5a4c.png)
-
-![explorer](https://user-images.githubusercontent.com/55381228/159389002-0dbe329a-09aa-4aaf-aba8-4a98e4fdcc39.png)
 
