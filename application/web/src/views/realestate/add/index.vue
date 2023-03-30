@@ -1,6 +1,6 @@
 <template>
-  <div class="app-container">
-    <el-form ref="ruleForm" v-loading="loading" :model="ruleForm" :rules="rules" label-width="100px">
+  <div class="app-container" center>
+    <el-form ref="ruleForm" v-loading="loading" :model="ruleForm" :rules="rules" label-width="100px" center>
 
       <el-form-item label="Owner" prop="proprietor">
         <el-select v-model="ruleForm.proprietor" placeholder="Please Select Owner" @change="selectGet">

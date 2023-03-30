@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
+  <div class="container" center>
     <el-alert
-      type="success"
+      center type="success"
     >
       <p>Account ID: {{ accountId }}</p>
       <p>User Name: {{ userName }}</p>
@@ -10,7 +10,7 @@
       <p>The sale, donation or pledge operation can be initiated only when the guarantee is FALSE</p>
     </el-alert>
     <div v-if="realEstateList.length==0" style="text-align: center;">
-      <el-alert
+      <el-alert center
         title="No Data Yet"
         type="warning"
       />

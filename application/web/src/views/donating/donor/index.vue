@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <el-alert
+  <div class="container" center>
+    <el-alert center
       type="success"
     >
       <p>Account ID: {{ accountId }}</p>
@@ -8,7 +8,7 @@
       <p>Balance: ${{ balance }}</p>
     </el-alert>
     <div v-if="donatingList.length==0" style="text-align: center;">
-      <el-alert
+      <el-alert center
         title="No Data Yet"
         type="warning"
       />
